@@ -1,10 +1,13 @@
 TODO:
+  - create header:
+      - create navigation:
+          - a in links full li
+      - create search
+      - create user menu
+      - add styles:
+          - refactor styles
+      - Logo link to main
+      - add react router dom:
+          - change a on Link in NavBar
 
-- create header
-
-  - create search
-  - create navigation
-  - create user menu
-  - add styles
-
-- create footer
+  - create footer

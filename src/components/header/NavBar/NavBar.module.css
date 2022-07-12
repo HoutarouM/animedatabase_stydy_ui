@@ -1,0 +1,46 @@
+.NavBar {
+    max-width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+}
+
+ul li {
+    padding: 0% 2.5vw;
+}
+
+ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #E3F2FD;
+    font-size: 120%;
+    padding: 1vw;
+    transition: background 300ms;
+}
+
+ul li a:hover {
+    border-radius: 5%;
+    background: #42A5F5;
+}
+
+ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+ul li a:hover:after {
+    transform: scaleX(1);
+}

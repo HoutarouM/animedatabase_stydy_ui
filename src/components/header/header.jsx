@@ -1,11 +1,18 @@
 import React from 'react'
-import Logo from '../Logo/Logo'
-import HeaderStyles from './Header.module.css'
+
+// components
+import Logo from './Logo/Logo'
+import NavBar from './NavBar/NavBar'
+
+// styles
+import HeaderStyle from'./Header.module.css'
 
 const Header = () => {
     return (
-        <header className={HeaderStyles.Header}>
+        <header className={HeaderStyle.Header}>
             <Logo />
+
+            <NavBar />
         </header>
     )
 }
