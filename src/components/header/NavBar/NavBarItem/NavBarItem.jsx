@@ -1,11 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NavBarItem = (props) => {
     return (
         <>
-            {/* TODO: Change a link on Link from react router dom */}
             <li>
-                <a href={props.href}>{props.children}</a>
+                <Link to={props.href}>{props.children}</Link>
             </li>
         </>
     )

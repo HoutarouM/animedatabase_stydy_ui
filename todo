@@ -7,7 +7,5 @@ TODO:
       - add styles:
           - refactor styles
       - Logo link to main
-      - add react router dom:
-          - change a on Link in NavBar
 
   - create footer
