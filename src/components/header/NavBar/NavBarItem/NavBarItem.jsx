@@ -1,12 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { BrowserRouter as Router, Link } from 'react-router-dom'
 
 const NavBarItem = (props) => {
     return (
         <>
+        <Router>
             <li>
-                <Link to={props.href}>{props.children}</Link>
+                <Link to={props.path}>{props.children}</Link>
             </li>
+        </Router>
         </>
     )
 }

@@ -14,10 +14,10 @@ const Header = () => {
             <Logo />
 
             <NavBar>
-                <NavBarItem href="#">Home</NavBarItem>
-                <NavBarItem href="#">Anime</NavBarItem>
-                <NavBarItem href="#">Manga</NavBarItem>
-                <NavBarItem href="#">Community</NavBarItem>
+                <NavBarItem path="/">Home</NavBarItem>
+                <NavBarItem path="/anime">Anime</NavBarItem>
+                <NavBarItem path="/manga">Manga</NavBarItem>
+                <NavBarItem path="/community">Community</NavBarItem>
             </NavBar>
         </header>
     )

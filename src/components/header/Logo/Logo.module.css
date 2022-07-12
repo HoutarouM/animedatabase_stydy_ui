@@ -1,4 +1,7 @@
-.LogoStyle {}
+a {
+    text-decoration: none;
+    color: #E3F2FD;
+}
 
 .LogoFontStyle {
     font-family: 'Yomogi', cursive;
