@@ -2,7 +2,7 @@ TODO:
   - create header:
       - create navigation:
           - down menu:
-              - fix hover
+              - add to as props parameter
 
       - create search
       - create user menu

@@ -7,8 +7,8 @@ const NavBarItem = (props) => {
     return (
         <>
         <Router>
-            <li>
-                <Link to={props.path} onMouseEnter={() => setOpen(!open)}>
+            <li onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+                <Link to={props.path}>
                     {props.text}
                 </Link>
             
