@@ -4,6 +4,8 @@ import React from 'react'
 import Logo from './Logo/Logo'
 import NavBar from './NavBar/NavBar'
 import NavBarItem from './NavBar/NavBarItem/NavBarItem'
+import DropdownMenu from './NavBar/DropdownMenu/DropdownMenu'
+import DropdownMenuItem from './NavBar/DropdownMenu/DropDownMenuItem'
 
 // styles
 import HeaderStyle from'./Header.module.css'
@@ -14,10 +16,14 @@ const Header = () => {
             <Logo />
 
             <NavBar>
-                <NavBarItem path="/">Home</NavBarItem>
-                <NavBarItem path="/anime">Anime</NavBarItem>
-                <NavBarItem path="/manga">Manga</NavBarItem>
-                <NavBarItem path="/community">Community</NavBarItem>
+                <NavBarItem path="/" text="Home">
+                    <DropdownMenu>
+                        <DropdownMenuItem>Test</DropdownMenuItem>
+                    </DropdownMenu>
+                </NavBarItem>
+                <NavBarItem path="/anime" text="Anime"></NavBarItem>
+                <NavBarItem path="/manga" text="Manga"></NavBarItem>
+                <NavBarItem path="/community" text="Community"></NavBarItem>
             </NavBar>
         </header>
     )

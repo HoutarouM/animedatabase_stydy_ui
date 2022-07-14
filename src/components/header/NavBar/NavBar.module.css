@@ -31,8 +31,8 @@ ul li a::after {
     content: "";
     position: absolute;
     background-color: white;
-    border-bottom-left-radius: 25%;
-    border-bottom-right-radius: 25%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
     height: 3px;
     width: 100%;
     left: 0;

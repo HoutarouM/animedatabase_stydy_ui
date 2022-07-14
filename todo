@@ -1,7 +1,9 @@
 TODO:
   - create header:
       - create navigation:
-          - down menu
+          - down menu:
+              - fix hover
+
       - create search
       - create user menu
       - add styles:
