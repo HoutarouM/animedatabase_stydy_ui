@@ -1,0 +1,28 @@
+.DropdownMenu {
+    position: absolute;
+    top: 5rem;
+    box-shadow: 0 0 10px grey;
+    background-color: #E3F2FD;
+    border-radius: 5%;
+    width: 10rem;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    transform: translateX(-25%);
+}
+
+.MenuItem {
+    display: block;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    color: #2196F3;
+    padding: 0.5rem 1rem;
+    border-radius: 5%;
+    transition: background-color 200ms ease-in-out;
+}
+
+.MenuItem:hover {
+    color: #E3F2FD;
+    background-color: #2196F3;
+}
