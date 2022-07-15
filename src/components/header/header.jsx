@@ -10,6 +10,10 @@ import DropdownMenuItem from './NavBar/DropdownMenu/DropDownMenuItem/DropDownMen
 // styles
 import HeaderStyle from'./Header.module.css'
 
+/**
+ * Header is a function that returns a header element with a logo and a navbar with navbar items.
+ * @returns A React Component
+ */
 const Header = () => {
     return (
         <header className={HeaderStyle.Header}>
