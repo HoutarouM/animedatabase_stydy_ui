@@ -5,7 +5,7 @@ import Logo from './Logo/Logo'
 import NavBar from './NavBar/NavBar'
 import NavBarItem from './NavBar/NavBarItem/NavBarItem'
 import DropdownMenu from './NavBar/DropdownMenu/DropdownMenu'
-import DropdownMenuItem from './NavBar/DropdownMenu/DropDownMenuItem'
+import DropdownMenuItem from './NavBar/DropdownMenu/DropDownMenuItem/DropDownMenuItem'
 
 // styles
 import HeaderStyle from'./Header.module.css'
@@ -18,7 +18,7 @@ const Header = () => {
             <NavBar>
                 <NavBarItem path="/" text="Home">
                     <DropdownMenu>
-                        <DropdownMenuItem>Test</DropdownMenuItem>
+                        <DropdownMenuItem path="/test">Test</DropdownMenuItem>
                     </DropdownMenu>
                 </NavBarItem>
                 <NavBarItem path="/anime" text="Anime"></NavBarItem>
