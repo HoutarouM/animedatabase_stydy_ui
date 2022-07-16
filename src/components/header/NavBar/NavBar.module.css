@@ -1,4 +1,4 @@
-.NavBar {
+nav {
     max-width: 100%;
 }
 
@@ -15,15 +15,13 @@ ul li {
 
 ul li a {
     position: relative;
-    text-decoration: none;
-    color: #E3F2FD;
+    border-radius: var(--bradius);
     font-size: 120%;
     padding: 1vw;
     transition: background 300ms;
 }
 
 ul li a:hover {
-    border-radius: 5%;
     background: #42A5F5;
 }
 
@@ -31,8 +29,8 @@ ul li a::after {
     content: "";
     position: absolute;
     background-color: white;
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: var(--bradius);
+    border-bottom-right-radius: var(--bradius);
     height: 3px;
     width: 100%;
     left: 0;

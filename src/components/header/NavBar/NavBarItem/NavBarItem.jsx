@@ -12,7 +12,9 @@ const NavBarItem = (props) => {
     return (
         <>
         <Router>
-            <li onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+            <li onMouseEnter={() => setOpen(true)} 
+                onMouseLeave={() => setOpen(false)}>
+                    
                 <Link to={props.path}>
                     {props.text}
                 </Link>

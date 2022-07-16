@@ -1,7 +1,7 @@
 import React from 'react'
 
 // styles
-import NavBarStyle from './NavBar.module.css'
+import './NavBar.module.css'
 
 /**
  * The NavBar function returns a nav element with a className of NavBarStyle.NavBar, and the children
@@ -10,7 +10,7 @@ import NavBarStyle from './NavBar.module.css'
  */
 const NavBar = (props) => {
     return (
-        <nav className={NavBarStyle.NavBar}>
+        <nav>
             <ul>
                 {props.children}
             </ul>
