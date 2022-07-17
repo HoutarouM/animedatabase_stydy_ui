@@ -6,6 +6,7 @@ import NavBar from './NavBar/NavBar'
 import NavBarItem from './NavBar/NavBarItem/NavBarItem'
 import DropdownMenu from './NavBar/DropdownMenu/DropdownMenu'
 import DropdownMenuItem from './NavBar/DropdownMenu/DropDownMenuItem/DropDownMenuItem'
+import Search from './Search/Search'
 
 // styles
 import './Header.module.css'
@@ -15,21 +16,23 @@ import './Header.module.css'
  * @returns A React Component
  */
 const Header = () => {
-    return (
-        <header>
-            <Logo />
+  return (
+    <header>
+      <Logo />
 
-            <NavBar>
-                <NavBarItem path="/anime" text="Anime">
-                    <DropdownMenu>
-                        <DropdownMenuItem path="/test">Test</DropdownMenuItem>
-                    </DropdownMenu>
-                </NavBarItem>
-                <NavBarItem path="/manga" text="Manga"></NavBarItem>
-                <NavBarItem path="/community" text="Community"></NavBarItem>
-            </NavBar>
-        </header>
-    )
+      <NavBar>
+        <NavBarItem path="/anime" text="Anime">
+          <DropdownMenu>
+            <DropdownMenuItem path="/test">Test</DropdownMenuItem>
+          </DropdownMenu>
+        </NavBarItem>
+        <NavBarItem path="/manga" text="Manga"></NavBarItem>
+        <NavBarItem path="/community" text="Community"></NavBarItem>
+      </NavBar>
+
+      <Search />
+    </header>
+  )
 }
 
 export default Header

@@ -2,6 +2,7 @@
     --background-color: #2196F3;
     --text-color: #E3F2FD;
     --bradius: 5%;
+    --font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 header {
@@ -18,4 +19,6 @@ header {
 a {
     text-decoration: none;
     color: var(--text-color);
+
+    font-family: var(--font-family);
 }
