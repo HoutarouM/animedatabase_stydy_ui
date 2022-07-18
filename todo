@@ -1,5 +1,18 @@
 TODO:
   - create header:
-      - create user menu
+      - remake search:
+          - add styles for input
+          - add style on focus
+          - add style for placeholder
+          - add styles for text in input
+
+      - create user menu:
+          - add dropdown menu on hover
+
+      - add docs
+
+      - refactor styles
+
+      - images to static
 
   - create footer
