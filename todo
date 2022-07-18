@@ -1,10 +1,6 @@
 TODO:
   - create header:
       - remake search:
-          - add styles for input
-          - add style on focus
-          - add style for placeholder
-          - add styles for text in input
 
       - create user menu:
           - add dropdown menu on hover
