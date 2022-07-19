@@ -1,7 +1,7 @@
 import React from 'react'
 
 // images
-import SearchImage from './search_icon.png'
+// import SearchImage from './search_icon.png'
 
 // style
 import SearchButtonStyle from './SearchButton.module.css'
@@ -15,7 +15,7 @@ const SearchButton = () => {
     <>
       <img
         className={SearchButtonStyle.SearchButton}
-        src={SearchImage}
+        src="/images/header/search_icon.png"
         alt="SearchButtonImage"
       />
     </>

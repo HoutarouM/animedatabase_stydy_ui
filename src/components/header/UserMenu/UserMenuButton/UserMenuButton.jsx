@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 // images
-import UserMenuButtonImage from './avatar_profile_icon.png'
+// import UserMenuButtonImage from './avatar_profile_icon.png'
 
 // styles
 import UserMenuButtonStyle from './UserMenuButton.module.css'
@@ -24,7 +24,7 @@ const UserMenuButton = (props) => {
         >
           <img
             className={UserMenuButtonStyle.UserMenuButton}
-            src={UserMenuButtonImage}
+            src="/images/header/avatar_profile_icon.png"
             alt="UserMenuButtonImage"
           />
 
