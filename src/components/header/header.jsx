@@ -14,12 +14,11 @@ import UserMenuButton from './UserMenu/UserMenuButton/UserMenuButton'
 // styles
 import './Header.css'
 
-/**
- * Header is a function that returns a header element with a logo and a navbar with navbar items.
- * @returns A React Component
- */
+/* A React component. Render Logo, NavBar and Search with opportunity switching between them, 
+  search button that change states on click, and user menu with dropdown menu on hover. */
 const Header = () => {
-  // TODO: add comment
+  // NavBar and Search states
+  // when true show the component
   const [showNav, isShowNav] = useState(true)
   const [showSearch, isShowSearch] = useState(false)
 
