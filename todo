@@ -1,12 +1,11 @@
 TODO:
-  - create header:
-      - create user menu:
-          - add dropdown menu on hover
 
-      - add docs
+- create header:
 
-      - refactor styles
+  - add docs
 
-      - images to static
+  - refactor styles
 
-  - create footer
+  - images to static
+
+- create footer

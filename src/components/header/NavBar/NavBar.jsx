@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 
 // styles
 import './NavBar.module.css'
@@ -9,13 +10,13 @@ import './NavBar.module.css'
  * @returns A navbar with a list of children.
  */
 const NavBar = (props) => {
-    return (
-        <nav>
-            <ul>
-                {props.children}
-            </ul>
-        </nav>
-    )
+  return (
+    <nav>
+      <Router>
+        <ul>{props.children}</ul>
+      </Router>
+    </nav>
+  )
 }
 
 export default NavBar

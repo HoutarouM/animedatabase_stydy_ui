@@ -2,3 +2,7 @@
     filter: invert(99%) sepia(1%) saturate(427%) hue-rotate(256deg) brightness(115%) contrast(100%);
     cursor: pointer;
 }
+
+img {
+    padding: 1vh;
+}
