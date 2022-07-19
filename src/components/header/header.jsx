@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { CSSTransition } from 'react-transition-group'
 
 // components
 import Logo from './Logo/Logo'
@@ -11,16 +12,19 @@ import SearchButtonImage from './Search/SearchButton/SearchButton'
 import UserMenuButton from './UserMenu/UserMenuButton/UserMenuButton'
 
 // styles
-import HeaderStyle from './Header.module.css'
+import './Header.css'
 
 /**
  * Header is a function that returns a header element with a logo and a navbar with navbar items.
  * @returns A React Component
  */
 const Header = () => {
-  /* If showNav show nav bar 
-   else show search*/
+  // TODO: add comment
   const [showNav, isShowNav] = useState(true)
+  const [showSearch, isShowSearch] = useState(false)
+
+  const navBarNodeRef = React.useRef(null)
+  const searchNodeRef = React.useRef(null)
 
   return (
     <header>
@@ -29,23 +33,44 @@ const Header = () => {
       </div>
 
       <div>
-        {showNav ? (
-          <NavBar>
-            <NavBarItem path="/anime" text="Anime">
-              <DropdownMenu>
-                <DropdownMenuItem path="/test">Test</DropdownMenuItem>
-              </DropdownMenu>
-            </NavBarItem>
-            <NavBarItem path="/manga" text="Manga"></NavBarItem>
-            <NavBarItem path="/community" text="Community"></NavBarItem>
-          </NavBar>
-        ) : (
-          <Search />
-        )}
+        <CSSTransition
+          nodeRef={navBarNodeRef}
+          in={showNav}
+          timeout={150}
+          classNames="animation"
+        >
+          <div ref={navBarNodeRef}>
+            {showNav && (
+              <NavBar>
+                <NavBarItem path="/anime" text="Anime">
+                  <DropdownMenu>
+                    <DropdownMenuItem path="/test">Test</DropdownMenuItem>
+                  </DropdownMenu>
+                </NavBarItem>
+                <NavBarItem path="/manga" text="Manga"></NavBarItem>
+                <NavBarItem path="/community" text="Community"></NavBarItem>
+              </NavBar>
+            )}
+          </div>
+        </CSSTransition>
+
+        <CSSTransition
+          nodeRef={searchNodeRef}
+          in={showSearch}
+          timeout={150}
+          classNames="animation"
+        >
+          <div ref={searchNodeRef}>{showSearch && <Search />}</div>
+        </CSSTransition>
       </div>
 
-      <div className={HeaderStyle.RightMenuWrapper}>
-        <span onClick={() => isShowNav(!showNav)}>
+      <div className="RightMenuWrapper">
+        <span
+          onClick={() => {
+            isShowNav(!showNav)
+            isShowSearch(!showSearch)
+          }}
+        >
           <SearchButtonImage />
         </span>
 

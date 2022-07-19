@@ -29,6 +29,20 @@ a {
     justify-content: flex-end;
 }
 
-img {
-    width: 85%;
+.animation-enter {
+    opacity: 0;
+}
+
+.animation-enter-active {
+    opacity: 1;
+    transition: opacity 150ms;
+}
+
+.animation-exit {
+    opacity: 1;
+}
+
+.animation-exit-active {
+    opacity: 0;
+    transition: opacity 150ms;
 }
